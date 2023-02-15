@@ -43,12 +43,18 @@ create table vaijes.idioma (
 
 //Insert turista
 INSERT INTO Turista (id_Turista, pais, sexo, edad, nombre) VALUES(1,'Guatemala', 'F', '16', 'Camila');
+INSERT INTO Turista (id_Turista, pais, sexo, edad, nombre) VALUES(2,'Guatemala', 'F', '18', 'Fernanda');
+INSERT INTO Turista (id_Turista, pais, sexo, edad, nombre) VALUES(3,'Quetzaltenango', 'M', '21', 'Fernando');
 
 //Insert recorrido
 INSERT INTO recorrido (id_recorrido, nombre, descripcion) VALUES (1, 'Caminata', 'Centro de Huehuetenango');
 
 //Insert idioma
 INSERT INTO idioma (id_idioma, idioma) VALUES (1,'Español');
+INSERT INTO idioma (id_idioma, idioma) VALUES (2,'Ingles');
+INSERT INTO idioma (id_idioma, idioma) VALUES (3,'Frances');
 
 //Actualizacion
 UPDATE turista SET idioma = 1 WHERE id_turista = 1;
+UPDATE turista SET idioma = 2 WHERE id_turista = 2;
+UPDATE turista SET idioma = 3 WHERE id_turista = 3;
